@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--tailwindcss and daisyui cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>PH-Tube</title>
+    <!-- tailwind-custom-css -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#FF1F3D",
+              secondary: "#25252533",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- style-css -->
+    <style>
+      .font-inter {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="font-inter px-4 md:px-5">
+    <!-- navbar start -->
+    <header class="container mx-auto md:mt-10 mt-6 mb-8">
+      <div
+        class="navbar bg-base-100 flex justify-evenly items-center gap-8 mb-6"
+      >
+        <div class="navbar-start">
+          <a href="/"
+            ><img src="./images/Logo.png" alt="Logo.png" class="w-20 md:w-full"
+          /></a>
+        </div>
+        <div
+          class="navbar-center text-primary sm:text-sm text-xs md:text-lg font-bold"
+        >
+          Blog Questions
+        </div>
+        <div class="navbar-end">
+          <a href="./blog.html" target="_blank">
+            <button
+              class="btn btn-xs sm:btn-sm md:btn-md md:py-2 md:px-5 bg-primary text-white sm:text-sm text-xs md:text-lg hover:bg-secondary hover:text-black font-semibold duration-500 ease-in-out normal-case"
+              disabled
+            >
+              Blog
+            </button></a
+          >
+        </div>
+      </div>
+      <div class="divider text-secondary"></div>
+    </header>
+    <!-- navbar end -->
+
+    <!-- main start -->
+    <main class="container mx-auto text-center my-4">
+      <!-- blog-cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 my-16 gap-y-8">
+        <div class="card w-full mx-auto bg-base-100 shadow-xl">
+          <figure>
+            <img
+              src="./images/que-1.png"
+              alt=""
+              class="w-full h-auto md:h-[300px]"
+            />
+          </figure>
+          <div class="card-body text-justify">
+            <h2 class="card-title text-xl font-bold">
+              Question-1: Discuss the scope of 'var', 'let', and 'const'
+            </h2>
+            <p class="card-title text-lg font-normal inline">
+              <span class="card-title text-lg font-bold">Ans:</span> There are
+              two types of scope in JavaScript and they are local and global.
+              Global variables are those declared outside of a block. Local
+              variables are those declared inside of a block. var declarations
+              are globally scoped or function scoped while let and const are
+              block scoped. var variables can be updated and re-declared within
+              its scope; let variables can be updated but not re-declared; const
+              variables can neither be updated nor re-declared.
+            </p>
+          </div>
+        </div>
+
+        <div class="card w-full mx-auto bg-base-100 shadow-xl">
+          <figure>
+            <img src="./images/que-2.png" alt="" class="w-full h-[300px]" />
+          </figure>
+          <div class="card-body text-justify">
+            <h2 class="card-title text-xl font-bold">
+              Question-2: Tell us the use cases of 'null' and 'undefined'
+            </h2>
+            <p class="card-title text-lg font-normal inline">
+              <span class="card-title text-lg font-bold">Ans:</span>Null is an
+              object in JavaScript and represents primitive data types. A null
+              value in JavaScript is used for referring absence of any object
+              value and if any function or variable returns null, then we can
+              infer that the object could not be created. The undefined property
+              indicates that a variable has not been assigned a value, or not
+              declared at all. The difference between null and undefined
+              variables is the data type of both variables; the null variable is
+              of object type and the undefined is of undefined data type. If
+              users are checking for the null variable, they can use the first
+              approach using the if-else conditional statement.
+            </p>
+          </div>
+        </div>
+
+        <div class="card w-full mx-auto bg-base-100 shadow-xl">
+          <figure>
+            <img src="./images/que-3.png" alt="" class="w-full h-[300px]" />
+          </figure>
+          <div class="card-body text-justify">
+            <h2 class="card-title text-xl font-bold">
+              Question-3: What do you mean by REST API?
+            </h2>
+            <p class="card-title text-lg font-normal inline">
+              <span class="card-title text-lg font-bold">Ans:</span> A REST API
+              is an API that conforms to the design principles of the REST, or
+              representational state transfer architectural style. REST APIs are
+              widely used for building web services due to their simplicity,
+              scalability, and compatibility with the HTTP protocol, making them
+              a popular choice for developing modern web and mobile
+              applications.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- main end -->
+  </body>
+</html>
